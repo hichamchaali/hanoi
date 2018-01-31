@@ -4,7 +4,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class DisqueTest {
+import junit.framework.TestCase;
+
+public class DisqueTest extends TestCase {
 
 	@Test
 	public void testCompareTo() {
@@ -13,7 +15,12 @@ public class DisqueTest {
 		Disque grand = new Disque(3);
 		assertEquals(-1, petit.compareTo(moyen));
 		assertEquals(-1, moyen.compareTo(grand));
+	
 		//TODO : à compléter
+
+
+		assertTrue(petit.compareTo(moyen) == -1);
+		assertTrue(moyen.compareTo(grand) == -1);
 	}
 
 }

@@ -6,6 +6,8 @@ public class Disque implements Comparable<Disque>{
     public Disque(int d) {
         this.d = d;
     }
+	
+	
 
 	@Override
 	public int compareTo(Disque obj) {
@@ -18,4 +20,9 @@ public class Disque implements Comparable<Disque>{
 		}
 		return res;
 	}
+
+	public String toString(){
+		return "Le diametre du disque est : "+this.diametre;
+	}
+
 }
